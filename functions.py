@@ -12,17 +12,17 @@ def list_of_files(directory, extension):  # Ouverture des fichiers
     return files_names
 
 
-def name_of_president(nom_fichier):  # Récupération du nom du président
+def donner_nom2(nom_fichier):  # Récupération du nom du président
     nom_president = ""
-    for i in range(len(nom_fichier)):
-        if nom_fichier[i] == "_":  # On démarre la récupération uniquement après le "_"
-            for j in range(i, len(nom_fichier)):
-                nom_president = nom_president + nom_fichier[j]
-        if nom_fichier[i] == "." or type(nom_fichier[i]) != str:
-        # On arrête la récupération avant le "." ou un chiffre
+    for i in range(11,len(nom_fichier)):
+        nom_president = nom_president + nom_fichier[i]
+        if (nom_fichier[i+1] == ".") or (nom_fichier[i+1] >= '0' and nom_fichier[i+1] <= '9'):
+            # On arrête la récupération avant le "." ou un chiffre
+            print("TEST")
             return nom_president
 
-def first_name(nom_president):
+
+def donner_prenom(nom_president):
     if nom_president == "Chirac":
         prenom_pre = "Jacques"
     if nom_president == "Giscard dEstaing":
