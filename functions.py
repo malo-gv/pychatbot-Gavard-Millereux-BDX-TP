@@ -14,17 +14,22 @@ def list_of_files(directory, extension):  # Met les noms des fichiers dans une l
     return files_names
 
 def donner_nom(nom_fichier):  # Récupération du nom du président
+
     nom_president = ""
     for i in range(11,len(nom_fichier)):
         nom_president = nom_president + nom_fichier[i]
         if (nom_fichier[i+1] == ".") or (nom_fichier[i+1] >= '0' and nom_fichier[i+1] <= '9'):
             # On arrête la récupération avant le "." ou un chiffre
+
             print("On a récupéré le nom")
+
             return nom_president
 
 
 def donner_prenom(nom_president):
+
     prenom_pre = ""
+
     if nom_president == "Chirac":
         prenom_pre = "Jacques"
         print("On a donné un prénom")
@@ -42,6 +47,7 @@ def donner_prenom(nom_president):
         print("On a donné un prénom")
     if nom_president == "Sarkozy":
         prenom_pre = "Nicolas"
+
         print("On a donné un prénom")
 
     return prenom_pre
@@ -85,3 +91,4 @@ def nettoyer_texte(nom_fichier):
     contenu_final = ' '.join(contenu_traite)
     with open(chemin_fichier, 'w', encoding='utf8') as fichier_destination:
         fichier_destination.write(contenu_final)
+

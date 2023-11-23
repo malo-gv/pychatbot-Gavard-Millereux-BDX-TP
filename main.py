@@ -5,6 +5,7 @@ directory = 'ressources/speeches-20231110/'
 files_names = (list_of_files(directory, "txt"))
 print(list(files_names)) #On affiche la liste des noms de fichiers
 
+
 for elt in list(files_names):
     nom_fichier = elt
 
@@ -21,3 +22,4 @@ for elt in list(files_names):
     transferer_contenu(contenu_minus, nom_fichier)
 
     nettoyer_texte(nom_fichier)
+
