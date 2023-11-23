@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="ajout des fichiers discours" />
+    <list id="e73c2aa5-1117-41da-aec9-ff99e9bfedc6" name="Changes by noemi" comment="FINI PARTIE 1" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="version-1.2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;malo-gv&quot;
+  }
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="malo-gv" />
+        <option name="repository" value="myfisrtchatBot_malo" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a712333b-f66b-4d73-bbf5-eb9a0cb8620d" />
+        <option name="url" value="https://github.com/malo-gv/myfisrtchatBot_malo.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2XzF5T5uzfavGtlWqjE36qJtiwW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/malog/OneDrive - Efrei/Informatique/Python/pythonProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\malog\OneDrive - Efrei\Informatique\Python\pythonProject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\malog\OneDrive - Efrei\Informatique\Python\pythonProject\ressources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="My fisrt chatBot Malo Noe" type="PythonConfigurationType" factoryName="Python">
+      <module name="My fisrt chatBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="" />
+      <created>1699623818157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699623818157</updated>
+      <workItem from="1699623828365" duration="4278000" />
+      <workItem from="1699797917404" duration="2239000" />
+      <workItem from="1699869560179" duration="58000" />
+      <workItem from="1699946092340" duration="91000" />
+      <workItem from="1699950730594" duration="7048000" />
+      <workItem from="1699961451983" duration="12000" />
+      <workItem from="1700068350713" duration="59000" />
+      <workItem from="1700068484394" duration="645000" />
+      <workItem from="1700148527045" duration="59000" />
+      <workItem from="1700148610522" duration="3000" />
+      <workItem from="1700758008963" duration="10000" />
+      <workItem from="1700758033169" duration="6864000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1699951528799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699951528799</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add print(&quot;coucou&quot;)">
+      <option name="closed" value="true" />
+      <created>1699952270152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699952270152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajout des fichiers discours">
+      <option name="closed" value="true" />
+      <created>1699956014828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699956014828</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ajout des fichiers discours">
+      <option name="closed" value="true" />
+      <created>1699957956080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699957956080</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ajout des fichiers discours">
+      <option name="closed" value="true" />
+      <created>1700764645307</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700764645307</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FINI PARTIE 1">
+      <option name="closed" value="true" />
+      <created>1700764649439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700764649439</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="add print(&quot;coucou&quot;)" />
+    <MESSAGE value="ajout des fichiers discours" />
+    <MESSAGE value="FINI PARTIE 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINI PARTIE 1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1700764328150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
