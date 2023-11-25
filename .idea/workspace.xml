@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="ajout des fichiers discours" />
-    <list id="e73c2aa5-1117-41da-aec9-ff99e9bfedc6" name="Changes by noemi" comment="FINI PARTIE 1" />
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="ajout des fichiers discours">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Chirac1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Chirac2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Giscard dEstaing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Hollande.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Macron.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Mitterrand1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Mitterrand2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/cleaned/Nomination_Sarkozy.txt" beforeDir="false" />
+    </list>
+    <list id="e73c2aa5-1117-41da-aec9-ff99e9bfedc6" name="Changes by noemi" comment="FINI PARTIE 1">
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +68,26 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/functions.py">
+      <ranges>
+        <range start1="15" end1="15" start2="15" end2="16" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="18" end1="19" start2="19" end2="20" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="20" end1="21" start2="21" end2="22" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="29" end1="30" start2="30" end2="30" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="54" end1="54" start2="54" end2="55" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="56" end1="57" start2="57" end2="58" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="61" end1="61" start2="62" end2="63" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="66" end1="66" start2="68" end2="69" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="69" end1="70" start2="72" end2="73" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="71" end1="73" start2="74" end2="76" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="74" end1="74" start2="77" end2="80" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="78" end1="79" start2="84" end2="86" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="93" end1="93" start2="100" end2="101" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="95" end1="95" start2="103" end2="191" changelist="e73c2aa5-1117-41da-aec9-ff99e9bfedc6" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -74,6 +109,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/malog/OneDrive - Efrei/Informatique/Python/pythonProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -93,6 +129,39 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="My fisrt chatBot Malo Noe" type="PythonConfigurationType" factoryName="Python">
       <module name="My fisrt chatBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,6 +182,87 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -136,6 +286,8 @@
       <workItem from="1700148610522" duration="3000" />
       <workItem from="1700758008963" duration="10000" />
       <workItem from="1700758033169" duration="6864000" />
+      <workItem from="1700765066055" duration="162000" />
+      <workItem from="1700913666793" duration="4688000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -185,21 +337,40 @@
       <option name="project" value="LOCAL" />
       <updated>1700764649439</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ajout des fichiers discours">
+      <option name="closed" value="true" />
+      <created>1700765192692</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700765192692</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="add print(&quot;coucou&quot;)" />
-    <MESSAGE value="ajout des fichiers discours" />
     <MESSAGE value="FINI PARTIE 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="FINI PARTIE 1" />
+    <MESSAGE value="ajout des fichiers discours" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout des fichiers discours" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1700764328150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1700918149868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

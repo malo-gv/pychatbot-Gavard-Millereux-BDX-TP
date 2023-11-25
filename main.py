@@ -10,8 +10,7 @@ for elt in list(files_names):
     nom_fichier = elt
 
     Nom = donner_nom(nom_fichier ) #On prend le nom du Président du 5e fichier
-    print(Nom) #On print ce nom
-    print(donner_prenom(Nom)) #On récupère son prénom en fonction de son nom
+    donner_prenom(Nom) #On récupère son prénom en fonction de son nom
 
     nom_fichier = 'ressources/speeches-20231110/' + nom_fichier
     contenu_fichier = copier_texte(nom_fichier) #On récupère le contenu des fichiers
@@ -23,3 +22,13 @@ for elt in list(files_names):
 
     nettoyer_texte(nom_fichier)
 
+
+calculer_tf(nom_fichier)
+directory = 'ressources/cleaned/'
+calculer_idf(directory)
+
+matrice = generer_matrice(directory)
+
+matrice = calculer_transposee(matrice)
+
+print(mots_non_importants(matrice))
