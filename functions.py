@@ -3,6 +3,7 @@
 import os
 import math
 import string
+from collections import defaultdict
 
 
 def list_of_files(directory, extension):  # Met les noms des fichiers dans une liste
@@ -245,10 +246,10 @@ def president_nation(directory):
             mots_freq_nation[nom_president] = calculer_tf(filename).get('nation', 0)
 
     president_parlant = [president for president, freq in mots_freq_nation.items() if freq > 0]
-    print(president_parlant)
+    print("Les présidents qui parlent de la nation sont : ",president_parlant)
 
     president_le_plus = max(mots_freq_nation, key=mots_freq_nation.get)
-    print(president_le_plus)
+    print("Le président parlant le plus de la nation est : ",president_le_plus)
 
 
 def president_ecologie(directory):
