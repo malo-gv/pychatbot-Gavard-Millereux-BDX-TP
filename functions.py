@@ -177,25 +177,44 @@ def mots_non_importants(directory):
     return (mots_non_importants)
 
 
-"""def mot_plus_important(directory):
+def mot_plus_important(directory):
     matrice = generer_matrice(directory)
-    mots_uniques = []
+    mots_uniques = set()
 
-    # Construire une liste de tous les mots uniques dans le corpus
+    # Construire un ensemble de tous les mots uniques dans le corpus
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             chemin_fichier = os.path.join(directory, filename)
             with open(chemin_fichier, 'r', encoding='utf8') as fichier:
                 contenu = fichier.read()
-            mots_uniques.extend(set(contenu.split()))
+            mots_uniques.update(set(contenu.split()))
 
-    # Construire une liste de tuples (mot_unique, score_tfidf_max)
-    mots_score_max = [(mot, max(matrice[mots_uniques.index(mot)])) for mot in mots_uniques]
+    # Construire un dictionnaire pour stocker le score TF-IDF maximal pour chaque mot
+    mots_score_max = defaultdict(lambda: 0)
+
+    # ... (le reste de votre code)
+
+    for mot in mots_uniques:
+        index_mot = list(mots_uniques).index(mot) if mot in mots_uniques else -1
+
+        # Vérifier que l'indice du mot est valide
+        if 0 <= index_mot < len(matrice[0]):
+            for i, filename in enumerate(os.listdir(directory)):
+                if filename.endswith(".txt"):
+                    nom_fichier = os.path.join(directory, filename)
+
+                    # Vérifier que l'indice i est valide
+                    if 0 <= i < len(matrice):
+                        # Obtenir le score TF-IDF pour le mot dans le document actuel
+                        tfidf = matrice[i][index_mot]
+
+                        # Mettre à jour le score TF-IDF maximal pour le mot
+                        mots_score_max[mot] = max(mots_score_max[mot], tfidf)
 
     # Trouver le mot avec le score TF-IDF le plus élevé
-    mot_max = max(mots_score_max, key=lambda x: x[1])
+    mot_max = max(mots_score_max.items(), key=lambda x: x[1])
 
-    return mot_max"""  # ERREURS EN BOUCLES ???????
+    return mot_max
 
 
 def mots_plus_repetes_par_chirac(directory):
@@ -238,13 +257,12 @@ def president_ecologie(directory):
             nom_president = donner_nom(filename)
             mots_freq_president = calculer_tf(filename)
             if ("climat" or "écologie" or "ecologie") in mots_freq_president:
-                print("Premier président à parler du climat et/ou de l'écologie :", nom_president)
+                return(nom_president)
                 break
 
 
 def mots_evoques(directory):
     mots_communs = set()
-
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             mots_president = set(calculer_tf(filename))
@@ -253,4 +271,4 @@ def mots_evoques(directory):
             else:
                 mots_communs.intersection_update(mots_president)
     mots_communs = [mot for mot in mots_communs if mot not in mots_non_importants(directory)]
-    print("Mots communs évoqués par tous les présidents :", mots_communs)
+    return(mots_communs)
