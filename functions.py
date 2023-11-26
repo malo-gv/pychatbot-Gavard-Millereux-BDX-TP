@@ -177,7 +177,7 @@ def mots_non_importants(directory):
     return(mots_non_importants)
 
 
-def mot_plus_important(directory):
+"""def mot_plus_important(directory):
     matrice = generer_matrice(directory)
     mots_uniques = []
 
@@ -195,5 +195,38 @@ def mot_plus_important(directory):
     # Trouver le mot avec le score TF-IDF le plus élevé
     mot_max = max(mots_score_max, key=lambda x: x[1])
 
-    return mot_max
+    return mot_max""" #ERREURS EN BOUCLES ???????
+
+def mots_plus_repetes_par_chirac(directory):
+    # On sépare nos étapes en 2 discours
+    discours1 = 'Nomination_Chirac1.txt'
+    discours2 = 'Nomination_Chirac2.txt'
+
+    freq1 = calculer_tf(discours1)
+    freq2 = calculer_tf(discours2)
+
+    mots_uniques_chirac1 = set(freq1.keys())
+    mots_uniques_chirac2 = set(freq2.keys())
+
+    tous_mots_uniques = mots_uniques_chirac1.union(mots_uniques_chirac2)
+
+    freq_globale = {mot: freq1.get(mot, 0) + freq2.get(mot, 0) for mot in tous_mots_uniques}
+
+    mots_plus_repetes = [mot for mot, freq in freq_globale.items() if freq == max(freq_globale.values())]
+    return(mots_plus_repetes)
+
+
+def president_nation(directory):
+    mots_freq_nation = {}
+
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            nom_president = donner_nom(filename)
+            mots_freq_nation[nom_president] = calculer_tf(filename).get('nation', 0)
+
+    president_parlant = [president for president, freq in mots_freq_nation.items() if freq > 0]
+    print(president_parlant)
+
+    president_le_plus = max(mots_freq_nation, key=mots_freq_nation.get)
+    print(president_le_plus)
 

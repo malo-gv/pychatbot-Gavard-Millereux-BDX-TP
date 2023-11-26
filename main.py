@@ -33,4 +33,8 @@ matrice = calculer_transposee(matrice)
 
 print(mots_non_importants(directory))
 
-print(mot_plus_important(directory))
+"""print(mot_plus_important(directory))""" #ERREURS VOIR FUNCTIONS
+
+print(mots_plus_repetes_par_chirac(directory))
+
+president_nation(directory)
