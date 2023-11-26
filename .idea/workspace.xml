@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="Presque fini j'en ai marre">
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="Presque fini j'en ai marre v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -255,7 +255,7 @@
       <workItem from="1700758008963" duration="10000" />
       <workItem from="1700758033169" duration="6864000" />
       <workItem from="1700765066055" duration="162000" />
-      <workItem from="1700913666793" duration="8227000" />
+      <workItem from="1700913666793" duration="10570000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -337,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700999662272</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Presque fini j'en ai marre v2">
+      <option name="closed" value="true" />
+      <created>1701005949981</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701005949981</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,10 +368,11 @@
     <MESSAGE value="ajout des fichiers discours" />
     <MESSAGE value="FINI PARTIE 1" />
     <MESSAGE value="Presque fini j'en ai marre" />
-    <option name="LAST_COMMIT_MESSAGE" value="Presque fini j'en ai marre" />
+    <MESSAGE value="Presque fini j'en ai marre v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Presque fini j'en ai marre v2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1701005436598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1701006545322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

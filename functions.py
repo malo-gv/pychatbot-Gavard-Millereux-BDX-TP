@@ -174,7 +174,7 @@ def calculer_transposee(matrice):
 def mots_non_importants(directory):
     idf = calculer_idf(directory)
     mots_non_importants = [mot for mot, score_idf in idf.items() if score_idf == 0]
-    return(mots_non_importants)
+    return (mots_non_importants)
 
 
 """def mot_plus_important(directory):
@@ -195,7 +195,8 @@ def mots_non_importants(directory):
     # Trouver le mot avec le score TF-IDF le plus élevé
     mot_max = max(mots_score_max, key=lambda x: x[1])
 
-    return mot_max""" #ERREURS EN BOUCLES ???????
+    return mot_max"""  # ERREURS EN BOUCLES ???????
+
 
 def mots_plus_repetes_par_chirac(directory):
     # On sépare nos étapes en 2 discours
@@ -213,7 +214,7 @@ def mots_plus_repetes_par_chirac(directory):
     freq_globale = {mot: freq1.get(mot, 0) + freq2.get(mot, 0) for mot in tous_mots_uniques}
 
     mots_plus_repetes = [mot for mot, freq in freq_globale.items() if freq == max(freq_globale.values())]
-    return(mots_plus_repetes)
+    return (mots_plus_repetes)
 
 
 def president_nation(directory):
@@ -230,3 +231,26 @@ def president_nation(directory):
     president_le_plus = max(mots_freq_nation, key=mots_freq_nation.get)
     print(president_le_plus)
 
+
+def president_ecologie(directory):
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            nom_president = donner_nom(filename)
+            mots_freq_president = calculer_tf(filename)
+            if ("climat" or "écologie" or "ecologie") in mots_freq_president:
+                print("Premier président à parler du climat et/ou de l'écologie :", nom_president)
+                break
+
+
+def mots_evoques(directory):
+    mots_communs = set()
+
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            mots_president = set(calculer_tf(filename))
+            if not mots_communs:
+                mots_communs.update(mots_president)
+            else:
+                mots_communs.intersection_update(mots_president)
+    mots_communs = [mot for mot in mots_communs if mot not in mots_non_importants(directory)]
+    print("Mots communs évoqués par tous les présidents :", mots_communs)
