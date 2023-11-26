@@ -46,7 +46,7 @@ while choix <= 0 or choix > 7:
         print("Les mots les moins importants sont : ", mots_non_importants(directory))
         break
     if choix == 2:
-        print("Le mot le plus important est : ", mot_plus_important(directory))  # ERREURS VOIR FUNCTIONS
+        print("Le mot le plus important est : ", mot_plus_important(directory))
         break
     if choix == 3:
         print("Le mot le plus répété par J.Chirac est : ", mots_plus_repetes_par_chirac(directory))

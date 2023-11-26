@@ -174,7 +174,7 @@ def calculer_transposee(matrice):
 
 def mots_non_importants(directory):
     idf = calculer_idf(directory)
-    mots_non_importants = [mot for mot, score_idf in idf.items() if score_idf == 0]
+    mots_non_importants = [mot for mot, score_idf in idf.items() if score_idf == 0] #Les mots non importants ont un IDF de 0
     return (mots_non_importants)
 
 
@@ -193,18 +193,13 @@ def mot_plus_important(directory):
     # Construire un dictionnaire pour stocker le score TF-IDF maximal pour chaque mot
     mots_score_max = defaultdict(lambda: 0)
 
-    # ... (le reste de votre code)
-
     for mot in mots_uniques:
         index_mot = list(mots_uniques).index(mot) if mot in mots_uniques else -1
 
-        # Vérifier que l'indice du mot est valide
         if 0 <= index_mot < len(matrice[0]):
             for i, filename in enumerate(os.listdir(directory)):
                 if filename.endswith(".txt"):
                     nom_fichier = os.path.join(directory, filename)
-
-                    # Vérifier que l'indice i est valide
                     if 0 <= i < len(matrice):
                         # Obtenir le score TF-IDF pour le mot dans le document actuel
                         tfidf = matrice[i][index_mot]
@@ -219,7 +214,7 @@ def mot_plus_important(directory):
 
 
 def mots_plus_repetes_par_chirac(directory):
-    # On sépare nos étapes en 2 discours
+    # On sépare toutes nos étapes en 2 discours
     discours1 = 'Nomination_Chirac1.txt'
     discours2 = 'Nomination_Chirac2.txt'
 
@@ -229,9 +224,9 @@ def mots_plus_repetes_par_chirac(directory):
     mots_uniques_chirac1 = set(freq1.keys())
     mots_uniques_chirac2 = set(freq2.keys())
 
-    tous_mots_uniques = mots_uniques_chirac1.union(mots_uniques_chirac2)
+    tous_mots_uniques = mots_uniques_chirac1.union(mots_uniques_chirac2) #On réunit les deux discours
 
-    freq_globale = {mot: freq1.get(mot, 0) + freq2.get(mot, 0) for mot in tous_mots_uniques}
+    freq_globale = {mot: freq1.get(mot, 0) + freq2.get(mot, 0) for mot in tous_mots_uniques} # Pareil pour la fréquence
 
     mots_plus_repetes = [mot for mot, freq in freq_globale.items() if freq == max(freq_globale.values())]
     return (mots_plus_repetes)
@@ -245,10 +240,10 @@ def president_nation(directory):
             nom_president = donner_nom(filename)
             mots_freq_nation[nom_president] = calculer_tf(filename).get('nation', 0)
 
-    president_parlant = [president for president, freq in mots_freq_nation.items() if freq > 0]
+    president_parlant = [president for president, freq in mots_freq_nation.items() if freq > 0] #Si freq > 0 cela signifie que le président a parlé de la nation
     print("Les présidents qui parlent de la nation sont : ",president_parlant)
 
-    president_le_plus = max(mots_freq_nation, key=mots_freq_nation.get)
+    president_le_plus = max(mots_freq_nation, key=mots_freq_nation.get) # On prend le maximum parmis tous les présidents en ayant parlé
     print("Le président parlant le plus de la nation est : ",president_le_plus)
 
 

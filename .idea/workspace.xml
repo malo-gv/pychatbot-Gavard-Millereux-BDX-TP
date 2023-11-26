@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="Presque fini j'en ai marre v3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
-    <list id="186e3dd8-b7b3-406c-8a3c-5e46235b986f" name="Changes by noemi" comment="">
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-    </list>
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="Presque fini j'en ai marre v3" />
+    <list id="186e3dd8-b7b3-406c-8a3c-5e46235b986f" name="Changes by noemi" comment="Changes by noemi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,25 +52,6 @@
         <option name="url" value="https://github.com/malo-gv/myfisrtchatBot_malo.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/functions.py">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="6" changelist="186e3dd8-b7b3-406c-8a3c-5e46235b986f" />
-        <range start1="179" end1="180" start2="180" end2="181" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="181" end1="182" start2="182" end2="183" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="183" end1="184" start2="184" end2="185" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="189" end1="190" start2="190" end2="194" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="191" end1="193" start2="195" end2="213" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="195" end1="196" start2="215" end2="216" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="197" end1="198" start2="217" end2="218" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="228" end1="229" start2="248" end2="249" changelist="186e3dd8-b7b3-406c-8a3c-5e46235b986f" />
-        <range start1="231" end1="232" start2="251" end2="252" changelist="186e3dd8-b7b3-406c-8a3c-5e46235b986f" />
-        <range start1="240" end1="241" start2="260" end2="261" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="246" end1="247" start2="266" end2="266" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-        <range start1="255" end1="256" start2="274" end2="275" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -277,7 +252,7 @@
       <workItem from="1700758008963" duration="10000" />
       <workItem from="1700758033169" duration="6864000" />
       <workItem from="1700765066055" duration="162000" />
-      <workItem from="1700913666793" duration="13321000" />
+      <workItem from="1700913666793" duration="13624000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -375,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701008252688</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Presque fini j'en ai marre v3">
+      <option name="closed" value="true" />
+      <created>1701011052334</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701011052334</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changes by noemi">
+      <option name="closed" value="true" />
+      <created>1701011056692</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701011056692</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,10 +391,11 @@
     <MESSAGE value="Presque fini j'en ai marre" />
     <MESSAGE value="Presque fini j'en ai marre v2" />
     <MESSAGE value="Presque fini j'en ai marre v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Presque fini j'en ai marre v3" />
+    <MESSAGE value="Changes by noemi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by noemi" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1701010980854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1701011157929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
