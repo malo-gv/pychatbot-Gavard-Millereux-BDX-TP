@@ -31,4 +31,6 @@ matrice = generer_matrice(directory)
 
 matrice = calculer_transposee(matrice)
 
-print(mots_non_importants(matrice))
+print(mots_non_importants(directory))
+
+print(mot_plus_important(directory))

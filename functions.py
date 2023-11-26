@@ -10,7 +10,6 @@ def list_of_files(directory, extension):  # Met les noms des fichiers dans une l
     for filename in os.listdir(directory):
         if filename.endswith(extension):
             files_names.append(filename)
-    print("On a mit les noms des fichiers dans une liste")
     return files_names
 
 
@@ -21,9 +20,6 @@ def donner_nom(nom_fichier):  # Récupération du nom du président
         nom_president = nom_president + nom_fichier[i]
         if (nom_fichier[i + 1] == ".") or (nom_fichier[i + 1] >= '0' and nom_fichier[i + 1] <= '9'):
             # On arrête la récupération avant le "." ou un chiffre
-
-            print("On a récupéré le nom")
-
             return nom_president
 
 
@@ -32,23 +28,21 @@ def donner_prenom(nom_president):
 
     if nom_president == "Chirac":
         prenom_pre = "Jacques"
-        print("On a donné un prénom")
+
     if nom_president == "Giscard dEstaing":
         prenom_pre = "Valery"
-        print("On a donné un prénom")
+
     if nom_president == "Hollande":
         prenom_pre = "François"
-        print("On a donné un prénom")
+
     if nom_president == "Mitterrand":
         prenom_pre = "François"
-        print("On a donné un prénom")
+
     if nom_president == "Macron":
         prenom_pre = "Emmanuel"
-        print("On a donné un prénom")
+
     if nom_president == "Sarkozy":
         prenom_pre = "Nicolas"
-
-        print("On a donné un prénom")
 
     return prenom_pre
 
@@ -57,13 +51,11 @@ def copier_texte(nom_fichier):
     contenu_fichier = ""
     with open(nom_fichier, 'r', encoding='utf8') as fichier:
         contenu_fichier = fichier.read()
-    print("On a récupéré le contenu")
     return contenu_fichier
 
 
 def convertir_en_minuscules(contenu_fichier):
     contenu_minus = contenu_fichier.lower()
-    print("On a converti en minuscules")
     return contenu_minus
 
 
@@ -75,7 +67,6 @@ def transferer_contenu(contenu_minus, nom_fichier):
         with open("./ressources/cleaned/" + nom_desti, 'w', encoding='utf8') as fichier_destination:
             fichier_destination.write(contenu_minus)  # On crée un fichier texte en minuscule dans le répertoire cleaned
     fichier_destination.close()
-    print("ON a ")
 
 
 def nettoyer_texte(nom_fichier):
@@ -98,7 +89,6 @@ def nettoyer_texte(nom_fichier):
     contenu_final = ' '.join(contenu_traite)
     with open(chemin_fichier, 'w', encoding='utf8') as fichier_destination:
         fichier_destination.write(contenu_final)
-    print("On a enlevé le reste")
 
 
 def calculer_tf(nom_fichier):
@@ -180,11 +170,30 @@ def calculer_transposee(matrice):
     # On échange les lignes et les colonnes
     return [[matrice[j][i] for j in range(len(matrice))] for i in range(len(matrice[0]))]
 
-def mots_non_importants(matrice):
-    mots_non_importants = []
 
-    for i, mot in enumerate(matrice):
-        if all(score == 0 for score in mot):
-            mots_non_importants.append(mot)
+def mots_non_importants(directory):
+    idf = calculer_idf(directory)
+    mots_non_importants = [mot for mot, score_idf in idf.items() if score_idf == 0]
+    return(mots_non_importants)
 
-        return mots_non_importants
+
+def mot_plus_important(directory):
+    matrice = generer_matrice(directory)
+    mots_uniques = []
+
+    # Construire une liste de tous les mots uniques dans le corpus
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            chemin_fichier = os.path.join(directory, filename)
+            with open(chemin_fichier, 'r', encoding='utf8') as fichier:
+                contenu = fichier.read()
+            mots_uniques.extend(set(contenu.split()))
+
+    # Construire une liste de tuples (mot_unique, score_tfidf_max)
+    mots_score_max = [(mot, max(matrice[mots_uniques.index(mot)])) for mot in mots_uniques]
+
+    # Trouver le mot avec le score TF-IDF le plus élevé
+    mot_max = max(mots_score_max, key=lambda x: x[1])
+
+    return mot_max
+
