@@ -28,14 +28,15 @@ matrice = generer_matrice(directory)
 
 matrice = calculer_transposee(matrice)
 
-print("Menu :")
+"""print("Menu :")
+print("0. Annuler.")
 print("1. Afficher la liste des mots les moins importants dans le corpus de documents.")
 print("2. Afficher le(s) mot(s) ayant le score TD-IDF le plus élevé.")
 print("3. Trouver le mot le plus répété par Chirac.")
 print("4. Identifier le président parlant de la ""Nation"" et celui en parlant le plus.")
 print("5. Indiquer le premier président à parler du climat et/ou de l’écologie.")
 print("6. Trouver les mots communs mentionnés par tous les présidents.")
-print("7. Annuler.")
+print("7. Posez VOTRE propre question.")
 print()
 print("Si vous obtenez le message ""PermissionError: [Errno 13] Permission denied"" veuillez relancer le programme.")
 
@@ -60,10 +61,13 @@ while choix <= 0 or choix > 7:
     if choix == 6:
         print("Les mots évoquées par tous les présidents sont : ",mots_evoques(directory))
         break
-    if choix == 7:
+    if choix == 0:
         print("Fin du programme. Au revoir !")
         break
-
+    if choix == 7:
+        question = input("Veuillez entrer votre message :")
+        
     else :
         print("! ERREUR !")
-        print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")
+        print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
+

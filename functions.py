@@ -268,3 +268,10 @@ def mots_evoques(directory):
                 mots_communs.intersection_update(mots_president)
     mots_communs = [mot for mot in mots_communs if mot not in mots_non_importants(directory)]
     return(mots_communs)
+
+#PARTIE 2 PARTIE 2 PARTIE 2 PARTIE 2 PARTIE 2 PARTIE 2
+
+def tokeniser_question(quest):
+    mots = quest.split
+    liste_mots = list(mots)
+    return liste_mots
