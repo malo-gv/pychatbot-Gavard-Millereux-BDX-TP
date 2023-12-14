@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important">
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="separation des fonctions effectuée">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions_Presidents_Speeches.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_Presidents_Speeches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions_TF_IDF_Matrice.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_TF_IDF_Matrice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions_q_and_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_q_and_a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
-    <list id="95307cc8-bbb4-4dbd-ab77-25207d440aa9" name="Changes by noemi" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +260,7 @@
       <workItem from="1700765066055" duration="162000" />
       <workItem from="1700913666793" duration="13624000" />
       <workItem from="1702381655291" duration="68000" />
-      <workItem from="1702547793901" duration="3838000" />
+      <workItem from="1702547793901" duration="7196000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -395,7 +398,39 @@
       <option name="project" value="LOCAL" />
       <updated>1702552540808</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ajouts de différents fichier py pour séparer notre fonctions">
+      <option name="closed" value="true" />
+      <created>1702559917719</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702559917719</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ajouts de différents fichier py pour séparer notre fonctions">
+      <option name="closed" value="true" />
+      <created>1702560042139</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702560042139</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ajouts de différents fichier py pour séparer notre fonctions">
+      <option name="closed" value="true" />
+      <created>1702560207457</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702560207457</updated>
+    </task>
+    <task id="LOCAL-00021" summary="separation des fonctions effectuée">
+      <option name="closed" value="true" />
+      <created>1702560454182</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702560454182</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,11 +459,13 @@
     <MESSAGE value="FIN" />
     <MESSAGE value="ajout tokken" />
     <MESSAGE value="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important" />
-    <option name="LAST_COMMIT_MESSAGE" value="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important" />
+    <MESSAGE value="ajouts de différents fichier py pour séparer notre fonctions" />
+    <MESSAGE value="separation des fonctions effectuée" />
+    <option name="LAST_COMMIT_MESSAGE" value="separation des fonctions effectuée" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1702375514869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702559362891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702562067500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

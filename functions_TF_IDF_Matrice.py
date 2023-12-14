@@ -1,5 +1,11 @@
 from functions_Presidents_Speeches import *
 from functions_q_and_a import *
+
+import os
+import math
+import string
+from collections import defaultdict
+
 def calculer_tf(nom_fichier):
     chemin_fichier = "./ressources/cleaned/" + nom_fichier
     with open(chemin_fichier, 'r', encoding='utf8') as fichier:

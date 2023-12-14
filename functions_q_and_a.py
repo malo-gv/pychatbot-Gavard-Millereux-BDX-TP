@@ -1,5 +1,11 @@
 from functions_Presidents_Speeches import *
 from functions_TF_IDF_Matrice import *
+
+import os
+import math
+import string
+from collections import defaultdict
+
 def tokeniser_question(quest):
     mots = quest.split()
     liste_mots = list(mots)
