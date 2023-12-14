@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="ajout tokken">
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <list id="95307cc8-bbb4-4dbd-ab77-25207d440aa9" name="Changes by noemi" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +257,7 @@
       <workItem from="1700765066055" duration="162000" />
       <workItem from="1700913666793" duration="13624000" />
       <workItem from="1702381655291" duration="68000" />
-      <workItem from="1702547793901" duration="1635000" />
+      <workItem from="1702547793901" duration="3838000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -389,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702550634629</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important">
+      <option name="closed" value="true" />
+      <created>1702552540808</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702552540808</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,11 +423,12 @@
     <MESSAGE value="Changes by noemi" />
     <MESSAGE value="FIN" />
     <MESSAGE value="ajout tokken" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout tokken" />
+    <MESSAGE value="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important" />
+    <option name="LAST_COMMIT_MESSAGE" value="modiff token (annulée par la suite)&#10;recher de mot de la question dans le corpus mais pb ne prends que les mots peu important" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1702375514869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702551387318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702559362891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
