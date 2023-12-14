@@ -1,8 +1,6 @@
-from functions_q_and_a import *
-from functions_TF_IDF_Matrice import *
+from functions_TF_IDF_Matrice import calculer_idf, calculer_tf, generer_matrice
 # Import des fonctions autres
 import os
-import math
 import string
 from collections import defaultdict
 

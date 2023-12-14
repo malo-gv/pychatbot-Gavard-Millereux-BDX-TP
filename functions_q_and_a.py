@@ -1,16 +1,27 @@
-from functions_Presidents_Speeches import *
-from functions_TF_IDF_Matrice import *
-
-import os
-import math
 import string
-from collections import defaultdict
 
 def tokeniser_question(quest):
     mots = quest.split()
     liste_mots = list(mots)
     return liste_mots
-
+def tokeniser_question(question):
+    contenu_sans_ponctuation = ''.join(
+        caractere if caractere not in string.punctuation else ' ' for caractere in question)
+    contenu_traite = []
+    mots = contenu_sans_ponctuation.split()
+    for mot in mots:
+        if '-' in mot:
+            sous_mots = mot.split('-')
+            contenu_traite.extend(sous_mots)
+        elif "'" in mot:
+            sous_mots = mot.split("'")
+            contenu_traite.extend(sous_mots)
+        else:
+            contenu_traite.append(mot)
+    contenu_final = ' '.join(contenu_traite)
+    mots = contenu_final.split()
+    liste_mots = list(mots)
+    return liste_mots
 
 def rechercher_mot_quest(liste_mots, mots_corpus):
     liste_inter = []
