@@ -71,3 +71,4 @@ while choix <= 0 or choix > 7:
         print("! ERREUR !")
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
+print(tokeniser_question("Salut je suis moi"))

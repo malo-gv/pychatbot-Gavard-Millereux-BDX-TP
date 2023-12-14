@@ -272,6 +272,6 @@ def mots_evoques(directory):
 #PARTIE 2 PARTIE 2 PARTIE 2 PARTIE 2 PARTIE 2 PARTIE 2
 
 def tokeniser_question(quest):
-    mots = quest.split
+    mots = quest.split()
     liste_mots = list(mots)
     return liste_mots
