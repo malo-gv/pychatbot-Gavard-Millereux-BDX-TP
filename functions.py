@@ -5,7 +5,6 @@ import math
 import string
 from collections import defaultdict
 
-
 def list_of_files(directory, extension):  # Met les noms des fichiers dans une liste
     files_names = []
     for filename in os.listdir(directory):
@@ -182,7 +181,7 @@ def mot_plus_important(directory):
     matrice = generer_matrice(directory)
     mots_uniques = set()
 
-    # Construire un ensemble de tous les mots uniques dans le corpus
+    # Construire un ensemble de tous les mots uniques (d'où le set) dans le corpus
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             chemin_fichier = os.path.join(directory, filename)
@@ -275,3 +274,11 @@ def tokeniser_question(quest):
     mots = quest.split()
     liste_mots = list(mots)
     return liste_mots
+
+
+def rechercher_mot_quest(liste_mots, mots_corpus):
+    liste_inter = []
+    for mot in liste_mots:
+        if mot in mots_corpus :
+            liste_inter.append(mot)
+    return liste_inter
