@@ -1,4 +1,4 @@
-from functions import *
+from functions_Presidents_Speeches import *
 
 directory = 'ressources/speeches-20231110/'
 files_names = (list_of_files(directory, "txt"))
