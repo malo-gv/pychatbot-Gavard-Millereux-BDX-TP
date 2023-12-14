@@ -1,5 +1,6 @@
+from functions_q_and_a import *
+from fun
 # Import des fonctions autres
-
 import os
 import math
 import string
