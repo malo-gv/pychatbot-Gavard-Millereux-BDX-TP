@@ -190,7 +190,7 @@ def mots_evoques(directory):
     return(mots_communs)
 
 def recuperer_tout_texte(directory):
-    texte_total = ""
+    stockage = ""
 
     for nom_fichier in os.listdir(directory):
         chemin_fichier = os.path.join(directory, nom_fichier)
@@ -198,7 +198,9 @@ def recuperer_tout_texte(directory):
         if os.path.isfile(chemin_fichier) and nom_fichier.endswith(".txt"):
             with open(chemin_fichier, 'r', encoding='utf-8') as fichier:
                 texte_du_fichier = fichier.read()
-                texte_total += texte_du_fichier
-    return(texte_total)
+                stockage += texte_du_fichier
+    texte = stockage.split()
+
+    return(texte)
 
 

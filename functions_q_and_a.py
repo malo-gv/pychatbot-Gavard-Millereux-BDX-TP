@@ -18,3 +18,4 @@ def rechercher_mot_quest(liste_mots, mots_corpus):
         if mot in mots_corpus :
             liste_inter.append(mot)
     return liste_inter
+

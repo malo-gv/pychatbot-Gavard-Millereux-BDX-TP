@@ -73,9 +73,11 @@ while choix <= 0 or choix > 7:
         print("! ERREUR !")
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
-'''liste_mots = tokeniser_question("Quel president parle de la nation et d écologie ?")
-print(liste_mots)'''
-print(recuperer_tout_texte(directory))
+liste_mots = tokeniser_question("Quel president parle de la nation et d écologie ?")
+print(liste_mots)
 
-'''mots_corpus = mots_evoques(directory)
-print(rechercher_mot_quest(liste_mots, mots_corpus))'''
+
+mots_corpus = recuperer_tout_texte(directory)
+
+print(rechercher_mot_quest(liste_mots, mots_corpus))
+
