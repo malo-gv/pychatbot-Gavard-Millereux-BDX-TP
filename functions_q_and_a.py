@@ -1,9 +1,6 @@
 import string
 
-def tokeniser_question(quest):
-    mots = quest.split()
-    liste_mots = list(mots)
-    return liste_mots
+
 def tokeniser_question(question):
     contenu_sans_ponctuation = ''.join(
         caractere if caractere not in string.punctuation else ' ' for caractere in question)

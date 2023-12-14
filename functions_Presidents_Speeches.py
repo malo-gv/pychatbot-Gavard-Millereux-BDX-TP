@@ -187,7 +187,7 @@ def mots_evoques(directory):
     mots_communs = [mot for mot in mots_communs if mot not in mots_non_importants(directory)]
     return(mots_communs)
 
-def recuperer_tout_texte(directory):
+def recuperer_tous_les_mots(directory):
     stockage = ""
 
     for nom_fichier in os.listdir(directory):
@@ -197,8 +197,8 @@ def recuperer_tout_texte(directory):
             with open(chemin_fichier, 'r', encoding='utf-8') as fichier:
                 texte_du_fichier = fichier.read()
                 stockage += texte_du_fichier
-    texte = stockage.split()
-
+    texte = set(stockage.split())
+    print(len(texte))
     return(texte)
 
 

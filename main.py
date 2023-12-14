@@ -73,11 +73,11 @@ while choix <= 0 or choix > 7:
         print("! ERREUR !")
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
-liste_mots = tokeniser_question("Quel president parle de la nation ?")
+liste_mots = tokeniser_question("Pourquoi autant de présidents parlent de la nation, en quoi la nation est si importante pour la France.")
 print(liste_mots)
 
 
-mots_corpus = recuperer_tout_texte(directory)
+mots_corpus = recuperer_tous_les_mots(directory)
 
 print(rechercher_mot_quest(liste_mots, mots_corpus))
 

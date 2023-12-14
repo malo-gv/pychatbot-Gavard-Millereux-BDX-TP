@@ -1,6 +1,6 @@
 import os
 import math
-
+from functions_q_and_a import tokeniser_question, rechercher_mot_quest
 
 def calculer_tf(nom_fichier):
     chemin_fichier = "./ressources/cleaned/" + nom_fichier
@@ -80,4 +80,6 @@ def generer_matrice(directory):
 def calculer_transposee(matrice):
     # On échange les lignes et les colonnes
     return [[matrice[j][i] for j in range(len(matrice))] for i in range(len(matrice[0]))]
-
+'''
+def calculer_vecteur_tf_idf():
+'''
