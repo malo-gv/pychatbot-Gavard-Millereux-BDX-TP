@@ -1,4 +1,6 @@
 from functions_Presidents_Speeches import *
+from functions_TF_IDF_Matrice import *
+from functions_q_and_a import *
 
 directory = 'ressources/speeches-20231110/'
 files_names = (list_of_files(directory, "txt"))
