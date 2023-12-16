@@ -1,5 +1,4 @@
 import os
-import math
 from functions_q_and_a import tokeniser_question, rechercher_mot_quest
 
 def calculer_tf(nom_fichier):
@@ -50,7 +49,7 @@ def generer_matrice(directory):
 
     idf = calculer_idf(directory)
 
-    matrice = []
+    matrice = {}
 
     # Pour chaque mot unique, construire son vecteur TF-IDF
     for mot in mots_uniques:
@@ -59,19 +58,19 @@ def generer_matrice(directory):
         # Pour chaque document, calculer le score TF-IDF du mot
         for filename in os.listdir(directory):
             if filename.endswith(".txt"):
-                nom_fichier = os.path.join(filename)
+                nom_fichier = (filename)
 
                 # Calculer le score TF pour le mot dans le document
                 tf = calculer_tf(nom_fichier).get(mot, 0)
 
                 # Calculer le score TF-IDF en multipliant le score TF par le score IDF
-                tfidf = tf * idf[mot]
+                tfidf = tf * idf.get(mot, 0)
 
                 # Ajouter le score TF-IDF au vecteur
                 vecteur.append(tfidf)
 
         # Ajouter le vecteur TF-IDF à la matrice
-        matrice.append(vecteur)
+        matrice[mot] = vecteur
 
     return matrice
 
@@ -80,6 +79,39 @@ def generer_matrice(directory):
 def calculer_transposee(matrice):
     # On échange les lignes et les colonnes
     return [[matrice[j][i] for j in range(len(matrice))] for i in range(len(matrice[0]))]
-'''
-def calculer_vecteur_tf_idf():
-'''
+
+
+
+from functions_TF_IDF_Matrice import calculer_tf, calculer_idf, generer_matrice
+
+def calculer_vecteur_tf_idf_question(question, directory):
+    liste_mots_question = tokeniser_question(question)
+
+    tf_question = {}
+    for mot in liste_mots_question:
+        tf_question[mot] = liste_mots_question.count(mot) / len(liste_mots_question)
+
+    idf_corpus = calculer_idf(directory)
+    vecteur_tfidf_question = []
+    for mot in liste_mots_question:
+        tfidf_score = tf_question.get(mot, 0) * idf_corpus.get(mot, 0)
+        vecteur_tfidf_question.append(tfidf_score)
+
+    return vecteur_tfidf_question
+
+import math
+def produit_scalaire(vecteur_a, vecteur_b):
+    return sum(a * b for a, b in zip(vecteur_a, vecteur_b))
+
+
+def norme_vecteur(vecteur):
+    return math.sqrt(sum(x**2 for x in vecteur))
+
+
+def similarite(vecteur_a, vecteur_b):
+    produit_scalaire_ab = produit_scalaire(vecteur_a, vecteur_b)
+    norme_a = norme_vecteur(vecteur_a)
+    norme_b = norme_vecteur(vecteur_b)
+    if norme_a == 0 or norme_b == 0:
+        return 0
+    return produit_scalaire_ab / (norme_a * norme_b)

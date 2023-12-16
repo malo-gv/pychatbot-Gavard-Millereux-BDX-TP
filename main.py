@@ -28,7 +28,6 @@ calculer_idf(directory)
 
 matrice = generer_matrice(directory)
 
-matrice = calculer_transposee(matrice)
 
 """print("Menu :")
 print("0. Annuler.")
@@ -73,7 +72,8 @@ while choix <= 0 or choix > 7:
         print("! ERREUR !")
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
-liste_mots = tokeniser_question("Pourquoi autant de présidents parlent de la nation, en quoi la nation est si importante pour la France.")
+question = "Pourquoi autant de présidents parlent de la nation, en quoi la nation est si importante pour la France."
+liste_mots = tokeniser_question(question)
 print(liste_mots)
 
 
@@ -81,3 +81,5 @@ mots_corpus = recuperer_tous_les_mots(directory)
 
 print(rechercher_mot_quest(liste_mots, mots_corpus))
 
+print(calculer_vecteur_tf_idf_question(question, directory))
+print(len(calculer_vecteur_tf_idf_question(question, directory)))

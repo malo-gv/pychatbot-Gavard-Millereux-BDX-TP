@@ -17,8 +17,7 @@ def tokeniser_question(question):
             contenu_traite.append(mot)
     contenu_final = ' '.join(contenu_traite)
     mots = contenu_final.split()
-    liste_mots = list(mots)
-    return liste_mots
+    return mots
 
 def rechercher_mot_quest(liste_mots, mots_corpus):
     liste_inter = []
