@@ -1,5 +1,5 @@
 import os
-from functions_q_and_a import tokeniser_question, rechercher_mot_quest
+from functions_q_and_a import tokeniser_question
 
 def calculer_tf(nom_fichier):
     chemin_fichier = "./ressources/cleaned/" + nom_fichier
@@ -115,3 +115,19 @@ def similarite(vecteur_a, vecteur_b):
     if norme_a == 0 or norme_b == 0:
         return 0
     return produit_scalaire_ab / (norme_a * norme_b)
+
+
+def trouver_document_similaire(question, corpus_directory):
+
+    vecteur_question = calculer_vecteur_tf_idf_question(question, corpus_directory)
+    matrice_tfidf = generer_matrice(corpus_directory)
+
+    meilleure_similarite = 0
+    document_similaire = ""
+
+    for nom_fichier, vecteur_corpus in matrice_tfidf.items():
+        similaire = similarite(vecteur_question, vecteur_corpus)
+        if similaire > meilleure_similarite:
+            meilleure_similarite = similaire
+            document_similaire = nom_fichier
+    return document_similaire, meilleure_similarite

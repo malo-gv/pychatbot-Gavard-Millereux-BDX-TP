@@ -82,4 +82,5 @@ mots_corpus = recuperer_tous_les_mots(directory)
 print(rechercher_mot_quest(liste_mots, mots_corpus))
 
 print(calculer_vecteur_tf_idf_question(question, directory))
-print(len(calculer_vecteur_tf_idf_question(question, directory)))
+
+print(trouver_document_similaire(question, directory))
