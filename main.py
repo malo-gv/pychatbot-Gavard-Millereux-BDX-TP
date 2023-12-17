@@ -28,7 +28,6 @@ calculer_idf(directory)
 
 matrice = generer_matrice(directory)
 
-
 """print("Menu :")
 print("0. Annuler.")
 print("1. Afficher la liste des mots les moins importants dans le corpus de documents.")
@@ -72,6 +71,7 @@ while choix <= 0 or choix > 7:
         print("! ERREUR !")
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
+
 question = "Pourquoi autant de présidents parlent de la nation, en quoi la nation est si importante pour la France."
 liste_mots = tokeniser_question(question)
 print(liste_mots)
@@ -81,6 +81,6 @@ mots_corpus = recuperer_tous_les_mots(directory)
 
 print(rechercher_mot_quest(liste_mots, mots_corpus))
 
-print(calculer_vecteur_tf_idf_question(question, directory))
+tf_quest = calculer_vecteur_tf_idf_question(question, directory)
 
-print(trouver_document_similaire(question, directory))
+print(document_pertinent(matrice, tf_quest, []))

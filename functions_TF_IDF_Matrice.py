@@ -100,34 +100,38 @@ def calculer_vecteur_tf_idf_question(question, directory):
     return vecteur_tfidf_question
 
 import math
+
 def produit_scalaire(vecteur_a, vecteur_b):
     return sum(a * b for a, b in zip(vecteur_a, vecteur_b))
+def norme(vecteur):
+    return sum(valeur ** 2 for valeur in vecteur) ** 0.5
+import os
 
-
-def norme_vecteur(vecteur):
-    return math.sqrt(sum(x**2 for x in vecteur))
-
-
+# Votre fonction de similarité
 def similarite(vecteur_a, vecteur_b):
-    produit_scalaire_ab = produit_scalaire(vecteur_a, vecteur_b)
-    norme_a = norme_vecteur(vecteur_a)
-    norme_b = norme_vecteur(vecteur_b)
+    produit_scalaire_ab = sum(float(a) * float(b) for a, b in zip(vecteur_a, vecteur_b))
+    norme_a = sum(float(a)**2 for a in vecteur_a) ** 0.5
+    norme_b = sum(float(b)**2 for b in vecteur_b) ** 0.5
+
     if norme_a == 0 or norme_b == 0:
         return 0
+
     return produit_scalaire_ab / (norme_a * norme_b)
 
+# La fonction pour le document pertinent
+def document_pertinent(tfidf_matrix_corpus, tfidf_vector_question, file_names):
+    # Calcul des similarités entre le vecteur de la question et tous les vecteurs du corpus
+    similarities = [similarite(tfidf_vector_question, vector) for vector in tfidf_matrix_corpus]
 
-def trouver_document_similaire(question, corpus_directory):
+    # Index du document ayant la similarité maximale
+    index_document_pertinent = similarities.index(max(similarities))
 
-    vecteur_question = calculer_vecteur_tf_idf_question(question, corpus_directory)
-    matrice_tfidf = generer_matrice(corpus_directory)
+    # Nom du document le plus pertinent
+    nom_document_pertinent = file_names[index_document_pertinent]
 
-    meilleure_similarite = 0
-    document_similaire = ""
+    return nom_document_pertinent
 
-    for nom_fichier, vecteur_corpus in matrice_tfidf.items():
-        similaire = similarite(vecteur_question, vecteur_corpus)
-        if similaire > meilleure_similarite:
-            meilleure_similarite = similaire
-            document_similaire = nom_fichier
-    return document_similaire, meilleure_similarite
+# Fonction pour obtenir le chemin du document dans le répertoire "speeches"
+def chemin_speeches(nom_document):
+    return os.path.join('./speeches', nom_document)
+

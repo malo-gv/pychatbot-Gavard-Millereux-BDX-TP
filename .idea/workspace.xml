@@ -260,7 +260,8 @@
       <workItem from="1702381655291" duration="68000" />
       <workItem from="1702547793901" duration="7196000" />
       <workItem from="1702573246237" duration="2252000" />
-      <workItem from="1702734579071" duration="4362000" />
+      <workItem from="1702734579071" duration="5143000" />
+      <workItem from="1702827581121" duration="3469000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -462,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702741808900</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ajouts des question 3/4 en partie">
+      <option name="closed" value="true" />
+      <created>1702810201931</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702810201931</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,6 +510,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1702375514869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702740471000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702830660331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
