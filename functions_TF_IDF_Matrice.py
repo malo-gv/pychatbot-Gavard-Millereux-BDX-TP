@@ -49,7 +49,7 @@ def generer_matrice(directory):
 
     idf = calculer_idf(directory)
 
-    matrice = {}
+    matrice = []
 
     # Pour chaque mot unique, construire son vecteur TF-IDF
     for mot in mots_uniques:
@@ -58,7 +58,7 @@ def generer_matrice(directory):
         # Pour chaque document, calculer le score TF-IDF du mot
         for filename in os.listdir(directory):
             if filename.endswith(".txt"):
-                nom_fichier = (filename)
+                nom_fichier = filename
 
                 # Calculer le score TF pour le mot dans le document
                 tf = calculer_tf(nom_fichier).get(mot, 0)
@@ -69,10 +69,11 @@ def generer_matrice(directory):
                 # Ajouter le score TF-IDF au vecteur
                 vecteur.append(tfidf)
 
-        # Ajouter le vecteur TF-IDF à la matrice
-        matrice[mot] = vecteur
+        # Ajouter le mot et son vecteur TF-IDF à la liste
+        matrice.append(vecteur)
 
     return matrice
+
 
 
 # Fonction pour calculer la transposée d'une matrice
@@ -82,8 +83,7 @@ def calculer_transposee(matrice):
 
 
 
-from functions_TF_IDF_Matrice import calculer_tf, calculer_idf, generer_matrice
-
+from functions_TF_IDF_Matrice import calculer_tf, calculer_idf
 def calculer_vecteur_tf_idf_question(question, directory):
     liste_mots_question = tokeniser_question(question)
 
@@ -99,31 +99,44 @@ def calculer_vecteur_tf_idf_question(question, directory):
 
     return vecteur_tfidf_question
 
+
+
 import math
+def vecteur(A, B):
+    return sum(a * b for a, b in zip(A, B))
 
-def produit_scalaire(vecteur_a, vecteur_b):
-    return sum(a * b for a, b in zip(vecteur_a, vecteur_b))
-def norme(vecteur):
-    return sum(valeur ** 2 for valeur in vecteur) ** 0.5
-import os
+def vector_norm(A):
+    return math.sqrt(sum(a * a for a in A))
 
-# Votre fonction de similarité
-def similarite(vecteur_a, vecteur_b):
-    produit_scalaire_ab = sum(float(a) * float(b) for a, b in zip(vecteur_a, vecteur_b))
-    norme_a = sum(float(a)**2 for a in vecteur_a) ** 0.5
-    norme_b = sum(float(b)**2 for b in vecteur_b) ** 0.5
 
-    if norme_a == 0 or norme_b == 0:
-        return 0
+def similarite(A, B):
+    result = vecteur(A, B)
+    norm_A = vector_norm(A)
+    norm_B = vector_norm(B)
 
-    return produit_scalaire_ab / (norme_a * norme_b)
+    # Vérifiez si l'un des vecteurs a une norme nulle
+    if norm_A == 0 or norm_B == 0:
+        return 0  # Évitez la division par zéro en renvoyant 0
 
-# La fonction pour le document pertinent
+    return result / (norm_A * norm_B)
+
+
+
 def document_pertinent(tfidf_corpus, tfidf_question):
     document_names = []
-    for filename in os.listdir('./Cleaned'):
+    for filename in os.listdir('ressources/cleaned'):
         if filename.endswith('.txt'):
             document_names.append(filename)
+
+    # Vérifier si la liste est vide
+    if not document_names:
+        print("Aucun document disponible dans 'ressources/cleaned'.")
+        return None
+
+    # Vérifier si la longueur de la liste est inférieure à most_similar_index
+    if most_similar_index >= len(document_names):
+        print("L'indice le plus similaire est en dehors de la plage valide.")
+        return None
 
     # Calculez les similarités entre le vecteur de la question et les vecteurs du corpus
     similarities = []
