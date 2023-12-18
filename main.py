@@ -72,7 +72,7 @@ while choix <= 0 or choix > 7:
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
 
-question = "Pourquoi autant de présidents parlent de la nation, en quoi la nation est si importante pour la France."
+question = "president"
 liste_mots = tokeniser_question(question)
 print(liste_mots)
 

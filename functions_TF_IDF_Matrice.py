@@ -118,39 +118,21 @@ def similarite(A, B):
     if norm_A == 0 or norm_B == 0:
         return 0  # Évitez la division par zéro en renvoyant 0
 
-    return result / (norm_A * norm_B)
-
-
+    # Assurez-vous que la similarité est dans la plage [0, 1]
+    similarity = max(0, min(result / (norm_A * norm_B), 1))
+    return similarity
 
 def document_pertinent(tfidf_corpus, tfidf_question):
-    document_names = []
-    for filename in os.listdir('ressources/cleaned'):
-        if filename.endswith('.txt'):
-            document_names.append(filename)
+    document_names = os.listdir('ressources/cleaned')
+    max_similarity = -1
+    i = 0
+    most_similar_document_name = None
 
-    # Vérifier si la liste est vide
-    if not document_names:
-        print("Aucun document disponible dans 'ressources/cleaned'.")
-        return None
-
-    # Vérifier si la longueur de la liste est inférieure à most_similar_index
-    if most_similar_index >= len(document_names):
-        print("L'indice le plus similaire est en dehors de la plage valide.")
-        return None
-
-    # Calculez les similarités entre le vecteur de la question et les vecteurs du corpus
-    similarities = []
-    # Pour chaque élément du corpus on calcule la similarité
     for elt in tfidf_corpus:
-        similarities.append(similarite(elt, tfidf_question))
+        similarity = similarite(elt, tfidf_question)
 
-    # Trouver la similarité maximale
-    max_value = max(similarities)
-
-    # Trouver l'indice de la valeur maximale
-    most_similar_index = similarities.index(max_value)
-
-    # Obtenir le nom du document correspondant
-    most_similar_document_name = document_names[most_similar_index]
-
+        if similarity > max_similarity:
+            max_similarity = similarity
+            most_similar_document_name = document_names[i]
+        i = i + 1
     return most_similar_document_name
