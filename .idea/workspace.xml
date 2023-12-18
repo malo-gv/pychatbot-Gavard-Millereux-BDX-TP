@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="QUESTION 6 commencée" />
+    <list default="true" id="69d303f3-bb4f-4166-acdf-86d17b4c0a33" name="Changes" comment="réorganisation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions_TF_IDF_Matrice.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_TF_IDF_Matrice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions_q_and_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_question_generation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <list id="fd55fa53-70ec-44ab-a0fd-de28acc388cb" name="Changes by noemi" comment="">
+      <change beforePath="$PROJECT_DIR$/functions_q_and_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_question_generation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +59,17 @@
         <option name="url" value="https://github.com/malo-gv/myfisrtchatBot_malo.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/functions_question_generation.py">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="20" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="2" end1="2" start2="21" end2="24" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="3" end1="3" start2="25" end2="30" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="4" end1="4" start2="31" end2="37" changelist="69d303f3-bb4f-4166-acdf-86d17b4c0a33" />
+        <range start1="5" end1="5" start2="38" end2="52" changelist="fd55fa53-70ec-44ab-a0fd-de28acc388cb" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -259,6 +278,7 @@
       <workItem from="1702734579071" duration="5143000" />
       <workItem from="1702827581121" duration="5009000" />
       <workItem from="1702890851584" duration="8617000" />
+      <workItem from="1702929838172" duration="4124000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -524,7 +544,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702920151670</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="réorganisation">
+      <option name="closed" value="true" />
+      <created>1702929922983</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702929922983</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,11 +589,12 @@
     <MESSAGE value="galeres a la question 5" />
     <MESSAGE value="QUESTION 5 REUSSI" />
     <MESSAGE value="QUESTION 6 commencée" />
-    <option name="LAST_COMMIT_MESSAGE" value="QUESTION 6 commencée" />
+    <MESSAGE value="réorganisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="réorganisation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1699626348378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_fisrt_chatBot$My_fisrt_chatBot_Malo_Noe.coverage" NAME="My fisrt chatBot Malo Noe Coverage Results" MODIFIED="1702375514869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702920019522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/My_fisrt_chatBot$main.coverage" NAME="main Coverage Results" MODIFIED="1702933693224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

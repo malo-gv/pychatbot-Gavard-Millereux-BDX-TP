@@ -1,6 +1,6 @@
 from functions_Presidents_Speeches import *
 from functions_TF_IDF_Matrice import *
-from functions_q_and_a import *
+from functions_question_generation import *
 
 directory = 'ressources/speeches-20231110/'
 files_names = (list_of_files(directory, "txt"))
@@ -72,17 +72,17 @@ while choix <= 0 or choix > 7:
         print("Veuillez entrer un chiffre compris entre 1 et 7 SVP !")"""
 
 
-question = "president"
+question = "Peux-tu me dire comment une nation peut-elle prendre soin de la nation , il est important de prendre en compte la nation ?"
 liste_mots = tokeniser_question(question)
-print(liste_mots)
+print("1",liste_mots)
 
 
 mots_corpus = recuperer_tous_les_mots(directory)
 
-print(rechercher_mot_quest(liste_mots, mots_corpus))
+print("2",rechercher_mot_quest(liste_mots, mots_corpus))
 
 tf_quest = calculer_vecteur_tf_idf_question(question, directory)
 
-print(document_pertinent(matrice, tf_quest))
+doc = document_pertinent(matrice, tf_quest)
 
-print(generer_reponse(question, 'ressources/speeches-20231110/'))
+print(generer_reponse(question, 'ressources/speeches-20231110/', doc, tf_quest))

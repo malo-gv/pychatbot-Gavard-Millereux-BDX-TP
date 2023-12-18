@@ -1,5 +1,5 @@
 import os
-from functions_q_and_a import tokeniser_question
+import string
 
 
 def calculer_tf(nom_fichier):
@@ -138,6 +138,7 @@ def document_pertinent(tfidf_corpus, tfidf_question):
         if similarity > max_similarity:
             max_similarity = similarity
             most_similar_document_name = document_names[i]
+        while i <= len(tfidf_corpus):
             i = i + 1
     return most_similar_document_name
 
@@ -166,33 +167,3 @@ def rechercher_mot_quest(liste_mots, mots_corpus):
         if mot in mots_corpus :
             liste_inter.append(mot)
     return liste_inter
-
-
-def generer_reponse(question, directory):
-    # Étape 1 : Calculer le vecteur TF-IDF de la question
-    tfidf_question = calculer_vecteur_tf_idf_question(question, directory)
-
-    # Étape 2 : Trouver le mot ayant le score TF-IDF le plus élevé
-    mot_max_tfidf_index = tfidf_question.index(max(tfidf_question))
-    liste_mots_question = tokeniser_question(question)
-    mot_max_tfidf = liste_mots_question[mot_max_tfidf_index]
-
-    # Étape 3 : Trouver le document pertinent
-    tfidf_corpus = generer_matrice(directory)
-    document_pertinent_name = document_pertinent(tfidf_corpus, tfidf_question)
-
-    print("Document pertinent trouvé :", document_pertinent_name)  # Ajout d'une impression
-
-    # Étape 4 : Trouver la première occurrence du mot dans le document pertinent
-    chemin_document_pertinent = os.path.join(directory, document_pertinent_name)
-    with open(chemin_document_pertinent, 'r', encoding='utf8') as fichier:
-        contenu_document_pertinent = fichier.read()
-
-    # Recherche de la première occurrence du mot
-    index_debut_phrase = contenu_document_pertinent.find(mot_max_tfidf)
-    index_fin_phrase = contenu_document_pertinent.find('.', index_debut_phrase)
-
-    # Étape 5 : Extraire la phrase contenant le mot
-    phrase_contenant_mot = contenu_document_pertinent[index_debut_phrase:index_fin_phrase]
-
-    return phrase_contenant_mot
