@@ -119,19 +119,25 @@ def similarite(vecteur_a, vecteur_b):
     return produit_scalaire_ab / (norme_a * norme_b)
 
 # La fonction pour le document pertinent
-def document_pertinent(tfidf_matrix_corpus, tfidf_vector_question, file_names):
-    # Calcul des similarités entre le vecteur de la question et tous les vecteurs du corpus
-    similarities = [similarite(tfidf_vector_question, vector) for vector in tfidf_matrix_corpus]
+def document_pertinent(tfidf_corpus, tfidf_question):
+    document_names = []
+    for filename in os.listdir('./Cleaned'):
+        if filename.endswith('.txt'):
+            document_names.append(filename)
 
-    # Index du document ayant la similarité maximale
-    index_document_pertinent = similarities.index(max(similarities))
+    # Calculez les similarités entre le vecteur de la question et les vecteurs du corpus
+    similarities = []
+    # Pour chaque élément du corpus on calcule la similarité
+    for elt in tfidf_corpus:
+        similarities.append(similarite(elt, tfidf_question))
 
-    # Nom du document le plus pertinent
-    nom_document_pertinent = file_names[index_document_pertinent]
+    # Trouver la similarité maximale
+    max_value = max(similarities)
 
-    return nom_document_pertinent
+    # Trouver l'indice de la valeur maximale
+    most_similar_index = similarities.index(max_value)
 
-# Fonction pour obtenir le chemin du document dans le répertoire "speeches"
-def chemin_speeches(nom_document):
-    return os.path.join('./speeches', nom_document)
+    # Obtenir le nom du document correspondant
+    most_similar_document_name = document_names[most_similar_index]
 
+    return most_similar_document_name

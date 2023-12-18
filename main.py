@@ -83,4 +83,4 @@ print(rechercher_mot_quest(liste_mots, mots_corpus))
 
 tf_quest = calculer_vecteur_tf_idf_question(question, directory)
 
-print(document_pertinent(matrice, tf_quest, []))
+print(document_pertinent(matrice, tf_quest))
