@@ -35,3 +35,17 @@ def generer_reponse(question, directory, document_pertinent_name, tfidf_question
     reponse = f"Le président {prenom_president} {nom_president} a dit : {phrase_contenant_mot}"
 
     return reponse
+
+
+def extraire_phrase_contenant_mot2(contenu, mot_max_tfidf):
+    phrases = contenu.split('.')  # Séparation du texte en phrases par les points
+    phrase_contenant_mot = None
+    for i in range(len(phrases) - 1, 0, -1):
+        # Récupération de la phrase précédente (indice -1)
+        phrase_precedente = phrases[i-1].strip()
+        # Si le mot avec le TF-IDF le plus élevé est présent dans la phrase
+        if mot_max_tfidf in phrase_precedente:
+            phrase_contenant_mot = phrase_precedente
+            print(phrase_contenant_mot)
+            return phrase_contenant_mot
+    return phrase_contenant_mot  # Ajout d'un retour en dehors de la boucle
