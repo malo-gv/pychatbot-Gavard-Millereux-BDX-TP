@@ -198,7 +198,6 @@ def recuperer_tous_les_mots(directory):
                 texte_du_fichier = fichier.read()
                 stockage += texte_du_fichier
     texte = set(stockage.split())
-    print(len(texte))
     return(texte)
 
 
