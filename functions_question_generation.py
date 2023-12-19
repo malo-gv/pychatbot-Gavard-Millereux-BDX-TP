@@ -1,22 +1,12 @@
 from functions_Presidents_Speeches import donner_nom, donner_prenom
 from functions_TF_IDF_Matrice import *
 
-"""def extraire_phrase_contenant_mot(contenu, mot_max_tfidf):
-    # Liste de délimiteurs de phrases
-    delimitateurs = ['.', '!', '?']
-    phrase = ""
-    for i in range(len(contenu)):
-        if contenu[i] in delimitateurs :
-            for j in range(i+1,len(contenu)):"""
-
-
 
 def generer_reponse(question, directory, document_pertinent_name, tfidf_question):
     # Étape 2 : Trouver le mot ayant le score TF-IDF le plus élevé
     mot_max_tfidf_index = tfidf_question.index(max(tfidf_question))
     liste_mots_question = tokeniser_question(question)
     mot_max_tfidf = liste_mots_question[mot_max_tfidf_index]
-    print(mot_max_tfidf)
     print("Document pertinent trouvé :", document_pertinent_name)  # Ajout d'une impression
 
     # Utiliser la fonction donner_nom pour extraire le nom et le prénom du président
@@ -46,6 +36,5 @@ def extraire_phrase_contenant_mot2(contenu, mot_max_tfidf):
         # Si le mot avec le TF-IDF le plus élevé est présent dans la phrase
         if mot_max_tfidf in phrase_precedente:
             phrase_contenant_mot = phrase_precedente
-            print(phrase_contenant_mot)
             return phrase_contenant_mot
     return phrase_contenant_mot  # Ajout d'un retour en dehors de la boucle
