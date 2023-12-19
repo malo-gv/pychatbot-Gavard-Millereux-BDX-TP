@@ -1,3 +1,8 @@
+
+"""Projet : CHATBOT PRESIDENTIEL
+Auteurs : [Malo Gavard, Noé Millereux]
+Rôle du Fichier : Ce fichier contient des fonctions pour extraire des informations spécifiques des discours présidentiels, telles que le nom du président, le prénom, et d'autres caractéristiques pertinentes pour l'analyse."""
+
 from functions_TF_IDF_Matrice import calculer_idf, calculer_tf, generer_matrice
 # Import des fonctions autres
 import os
