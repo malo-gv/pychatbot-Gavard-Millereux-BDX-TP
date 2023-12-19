@@ -51,3 +51,18 @@ Utilisation: Identifie le premier président à parler du climat et/ou de l'éco
 Mots Évoqués par Tous les Présidents:
 Fonction: mots_evoques(directory)
 Utilisation: Trouve les mots communs mentionnés par tous les présidents.
+
+Fonction : copier_texte(nom_fichier)
+Utilisation : Copie le contenu du fichier spécifié.
+
+Fonction : convertir_en_minuscules(contenu_fichier)
+Utilisation : Convertit le contenu du fichier en minuscules.
+
+Fonction : transferer_contenu(contenu_minus, nom_fichier)
+Utilisation : Transfère le contenu en minuscules vers un nouveau fichier dans le répertoire "cleaned".
+
+Fonction : extraire_phrase_contenant_mot2(contenu, mot_max_tfidf)
+Utilisation : Extrait la première phrase du contenu contenant le mot avec le score TF-IDF le plus élevé.
+
+Fonction : generer_reponse(question, directory, document_pertinent_name, tfidf_question)
+Utilisation : Génère une réponse à partir de la question en utilisant le document pertinent, son nom, et le vecteur TF-IDF de la question.
