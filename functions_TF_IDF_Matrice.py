@@ -1,3 +1,8 @@
+
+"""Projet : CHATBOT PRESIDENTIEL
+Auteurs : [Malo Gavard, Noé MILLEREUX]
+Rôle du Fichier : Ce fichier contient des fonctions pour le calcul du TF-IDF (Term Frequency-Inverse Document Frequency) ainsi que la génération d'une matrice TF-IDF à partir d'un corpus de discours présidentiels."""
+
 import os
 import string
 
