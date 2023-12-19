@@ -121,27 +121,21 @@ def similarite(A, B):
     if norm_A == 0 or norm_B == 0:
         return 0  # Évitez la division par zéro en renvoyant 0
 
-    # Assurez-vous que la similarité est dans la plage [0, 1]
-    similarity = max(0, min(result / (norm_A * norm_B), 1))
-    return similarity
+    return result / (norm_A * norm_B)
 
 
 def document_pertinent(tfidf_corpus, tfidf_question):
     document_names = os.listdir('ressources/cleaned')
     max_similarity = -1
-    i = 0
     most_similar_document_name = None
 
-    for elt in tfidf_corpus:
-        similarity = similarite(elt, tfidf_question)
-
+    for i in range(8):
+        similarity = similarite(tfidf_corpus[i], tfidf_question)
         if similarity > max_similarity:
             max_similarity = similarity
             most_similar_document_name = document_names[i]
-        while i <= len(tfidf_corpus):
-            i = i + 1
-    return most_similar_document_name
 
+    return most_similar_document_name
 
 def tokeniser_question(question):
     contenu_sans_ponctuation = ''.join(
@@ -161,9 +155,10 @@ def tokeniser_question(question):
     mots = contenu_final.split()
     return mots
 
+
 def rechercher_mot_quest(liste_mots, mots_corpus):
     liste_inter = []
     for mot in liste_mots:
-        if mot in mots_corpus :
+        if mot in mots_corpus:
             liste_inter.append(mot)
     return liste_inter
