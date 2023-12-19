@@ -1,3 +1,8 @@
+
+"""Projet : CHATBOT PRESIDENTIEL
+Auteurs : [Malo Gavard, Noé Millereux]
+Rôle du Fichier : Ce fichier contient des fonctions pour la génération de questions à partir d'un corpus de discours présidentiels. Il utilise des techniques de traitement de texte pour identifier des mots clés et formuler des questions pertinentes."""
+
 from functions_Presidents_Speeches import donner_nom, donner_prenom
 from functions_TF_IDF_Matrice import *
 
