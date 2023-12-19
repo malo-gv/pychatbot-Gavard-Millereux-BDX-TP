@@ -1,3 +1,8 @@
+
+"""Projet : CHATBOT PRESIDENTIEL
+Auteurs : [Malo Gavard, Noé Millereux]
+Rôle du Fichier : Ce fichier est le point d'entrée principal du programme. Il contient le code principal pour l'interaction avec l'utilisateur, la gestion des choix, et l'exécution des différentes fonctionnalités de l'analyse de discours présidentiels."""
+
 from functions_Presidents_Speeches import *
 from functions_TF_IDF_Matrice import *
 from functions_question_generation import *
