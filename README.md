@@ -8,6 +8,8 @@ Il arrive que lors du lancement du programme on est l'erreur suivante :
 "PermissionError: [Errno 13] Permission denied"
 Pour résoudre ce problème il suffit de relancer le programme plusieurs fois.
 
+La foction qui génère la réponse ne marche pas totalement.
+
 Précautions à prendre avant d'utiliser le programme :
 Il faut préalablement récupérer les discours de tous les président et les mettres dans un répertoire dans le programme python
 
